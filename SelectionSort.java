@@ -1,12 +1,5 @@
 public class SelectionSort {
 
-    protected void printArray(int array[]) {
-        for (int item: array) {
-            System.out.print(item + ", ");
-        }
-        System.out.println();
-    }
-
     protected void sortArray(int a[]) {
         int n = a.length;
         for (int p = 0; p < n - 1; p++) {
@@ -26,9 +19,9 @@ public class SelectionSort {
     public static void main(String[] args) {
         SelectionSort sp = new SelectionSort();
         int[] array = {1, 6, 2, 0, -1, 5, 3};
-        sp.printArray(array);
+        Util.printArray(array);
         sp.sortArray(array);
-        sp.printArray(array);
+        Util.printArray(array);
     }
 
 }

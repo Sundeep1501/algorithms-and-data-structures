@@ -64,9 +64,6 @@ public class SpiralMatrix {
         };
 
         SpiralMatrix sp = new SpiralMatrix();
-
-        for (int i: sp.spiralOrder(matrix)) {
-            System.out.print(i + ", ");
-        }
+        Util.printArray(sp.spiralOrder(matrix));
     }
 }
